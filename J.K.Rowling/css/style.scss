@@ -1,0 +1,216 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+body {
+  font-family: "Nunito", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+}
+.container {
+  display: grid;
+  grid-template-columns: 0.9fr 1.5fr 0.6fr;
+  grid-template-rows: 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "Profile Books Genres";
+}
+
+.profile {
+  grid-area: Profile;
+  background-color: #5a189a;
+  padding: 1.2rem;
+}
+.nav-profile {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+}
+.logo {
+  height: 4.2rem;
+}
+.navigation-list {
+  display: flex;
+  list-style: none;
+  gap: 2.6rem;
+  .navigation-links {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4rem;
+  }
+}
+.profile-info {
+  margin-top: 4.8rem;
+  display: flex;
+  align-items: center;
+  gap: 5.2rem;
+  margin-left: 3rem;
+}
+.profile-img {
+  height: 12rem;
+  border-radius: 50%;
+  justify-items: flex-start;
+  align-self: flex-start;
+}
+.name {
+  color: #fff;
+  font-size: 4.4rem;
+  font-weight: 400;
+}
+.social-media-description-container {
+  margin-top: 1.2rem;
+  display: flex;
+  gap: 1rem;
+}
+.icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+.description {
+  max-width: 24rem;
+  color: #fff;
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  position: relative;
+}
+.signature {
+  height: 7.4rem;
+  margin-top: 6.6rem;
+  position: absolute;
+  left: 44%;
+  transform: translate(-50%, -50%);
+}
+.books {
+  grid-area: Books;
+  background-color: #fff;
+  padding: 1.2rem;
+}
+.arrow-left {
+  stroke: #ff6d00;
+  height: 2.5rem;
+}
+.nav-books-container {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.4rem;
+  height: 4.4rem;
+  color: #ff6d00;
+}
+.title-books {
+  font-family: "Nunito", sans-serif;
+  font-size: 7rem;
+  padding: 2rem;
+  letter-spacing: -4px;
+  background: rgb(255, 109, 0);
+  background: radial-gradient(
+    circle,
+    rgba(255, 109, 0, 1) 54%,
+    rgba(106, 54, 173, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.genres {
+  grid-area: Genres;
+  background-color: #ff6d00;
+}
+.books-container {
+  margin-top: 1.6rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-auto-columns: 1fr;
+  gap: 1.2rem;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "book1 book2 book3"
+    "book4 book5 book6"
+    "book7 book8 book9";
+}
+.book {
+  display: grid;
+  place-items: center;
+}
+.book-title {
+  color: #ec6803;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding-top: 1.4rem;
+  text-align: center;
+  &:hover {
+    cursor: pointer;
+    font-size: 1.65rem;
+    transition: 0.5s;
+  }
+}
+.book-pic {
+  height: 22rem;
+}
+
+.book2 {
+  grid-area: book2;
+}
+
+.book3 {
+  grid-area: book3;
+}
+
+.book4 {
+  grid-area: book4;
+}
+
+.book5 {
+  grid-area: book5;
+}
+
+.book6 {
+  grid-area: book6;
+}
+
+.book7 {
+  grid-area: book7;
+}
+
+.book8 {
+  grid-area: book8;
+}
+
+.book9 {
+  grid-area: book9;
+}
+.book1,
+.book4,
+.book7 {
+  border-right: 1px solid #ec6803;
+}
+.book3,
+.book6,
+.book9 {
+  border-left: 1px solid #ec6803;
+}
+.genres-title {
+  margin-left: 6rem;
+  font-size: 2.4rem;
+  color: #fff;
+  margin-top: 2.2rem;
+}
+.genres-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin: 6rem 0 0 6rem;
+}
+.genres-items {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4rem;
+}
